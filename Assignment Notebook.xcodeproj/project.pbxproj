@@ -13,6 +13,7 @@
 		85847D702213CB9E00FAC5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85847D6E2213CB9E00FAC5EA /* Main.storyboard */; };
 		85847D722213CBAA00FAC5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85847D712213CBAA00FAC5EA /* Assets.xcassets */; };
 		85847D752213CBAA00FAC5EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85847D732213CBAA00FAC5EA /* LaunchScreen.storyboard */; };
+		85847D7D2213CC4300FAC5EA /* Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85847D7C2213CC4300FAC5EA /* Planner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		85847D712213CBAA00FAC5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85847D742213CBAA00FAC5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85847D762213CBAA00FAC5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85847D7C2213CC4300FAC5EA /* Planner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		85847D672213CB9D00FAC5EA /* Assignment Notebook */ = {
 			isa = PBXGroup;
 			children = (
+				85847D7C2213CC4300FAC5EA /* Planner.swift */,
 				85847D682213CB9D00FAC5EA /* AppDelegate.swift */,
 				85847D6A2213CB9D00FAC5EA /* MasterViewController.swift */,
 				85847D6C2213CB9D00FAC5EA /* DetailViewController.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85847D7D2213CC4300FAC5EA /* Planner.swift in Sources */,
 				85847D6D2213CB9D00FAC5EA /* DetailViewController.swift in Sources */,
 				85847D6B2213CB9D00FAC5EA /* MasterViewController.swift in Sources */,
 				85847D692213CB9D00FAC5EA /* AppDelegate.swift in Sources */,
