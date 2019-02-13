@@ -83,10 +83,16 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Assignment Details" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="classNameTextField" destination="75H-ft-Z7Q" id="rff-gm-S5B"/>
+                        <outlet property="descriptionTextField" destination="KzY-2E-Zf7" id="zig-wH-ZwR"/>
+                        <outlet property="dueDateTextField" destination="bc8-Yx-ZJX" id="gkm-zt-cAw"/>
+                        <outlet property="imageView" destination="PC7-Ny-0jD" id="yZm-75-SSb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="128.18590704647679"/>
+            <point key="canvasLocation" x="1087" y="104"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">

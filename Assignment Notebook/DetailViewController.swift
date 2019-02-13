@@ -9,32 +9,44 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
+    
+    @IBOutlet weak var classNameTextField: UITextField!
+    @IBOutlet weak var dueDateTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    var detailItem: Planner? {
+        didSet {
+            // Update the view.
+            configureView()
         }
     }
-
+    override func viewWillDisappear(_ animated: Bool) {
+        if let homework = self.detailItem {
+            homework.className = classNameTextField.text!
+            homework.dueDate = dueDateTextField.text!
+            homework.description = descriptionTextField.text!
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
     }
 
-    var detailItem: NSDate? {
-        didSet {
-            // Update the view.
-            configureView()
+    
+    func configureView() {
+        // Update the user interface for the detail item.
+        if let homework = detailItem {
+            if classNameTextField != nil {
+                classNameTextField.text = homework.className
+                dueDateTextField.text = homework.dueDate
+                descriptionTextField.text = homework.description
+                imageView.image = UIImage(data: homework.image)
+            }
         }
     }
-
 
 }
 
